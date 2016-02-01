@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1050" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CaliProject">
+            <connections>
+                <outlet property="contentSplitView" destination="174" id="177"/>
+                <outlet property="documentsTableView" destination="191" id="226"/>
+                <outlet property="firstContentView" destination="172" id="179"/>
+                <outlet property="functionButton" destination="216" id="222"/>
+                <outlet property="functionPopUpButton" destination="217" id="223"/>
+                <outlet property="leftDocumentsTableView" destination="188" id="199"/>
+                <outlet property="leftDocumentsView" destination="194" id="202"/>
+                <outlet property="liveFindSearchField" destination="209" id="221"/>
+                <outlet property="mainSplitView" destination="228" id="229"/>
+                <outlet property="secondContentView" destination="173" id="178"/>
+                <outlet property="secondContentViewNavigationBar" destination="180" id="186"/>
+                <outlet property="secondContentViewPopUpButton" destination="181" id="187"/>
+                <outlet property="statusBarTextField" destination="63" id="64"/>
+                <outlet property="tabBarControl" destination="196" id="250"/>
+                <outlet property="tabBarTabView" destination="256" id="261"/>
+                <outlet property="viewSelectionSizeSlider" destination="231" id="239"/>
+                <outlet property="viewSelectionView" destination="230" id="235"/>
+                <outlet property="window" destination="5" id="18"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Smultron" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="SmultronProjectWindow" animationBehavior="default" id="5" userLabel="ProjectWindow" customClass="CaliProjectWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="612" y="390" width="593" height="544"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <value key="minSize" type="size" width="94" height="86"/>
+            <view key="contentView" id="6">
+                <rect key="frame" x="0.0" y="0.0" width="593" height="544"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView controlSize="mini" id="256">
+                        <rect key="frame" x="0.0" y="524" width="517" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <font key="font" metaFont="miniSystem"/>
+                        <tabViewItems>
+                            <tabViewItem label="Tab" identifier="1" id="259">
+                                <view key="view" id="260">
+                                    <rect key="frame" x="10" y="19" width="497" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                        <connections>
+                            <outlet property="delegate" destination="196" id="262"/>
+                        </connections>
+                    </tabView>
+                    <customView id="196" customClass="PSMTabBarControl">
+                        <rect key="frame" x="0.0" y="521" width="593" height="23"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <textField focusRingType="none" verticalHuggingPriority="750" id="63">
+                        <rect key="frame" x="0.0" y="-4" width="593" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" focusRingType="none" alignment="center" bezelStyle="round" id="288">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <splitView autosaveName="ProjectSplitView" dividerStyle="thin" vertical="YES" id="228" customClass="CaliSplitView">
+                        <rect key="frame" x="-1" y="22" width="595" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView focusRingType="none" id="194">
+                                <rect key="frame" x="0.0" y="0.0" width="236" height="500"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </customView>
+                            <splitView autosaveName="ContentSplitView" id="174" customClass="CaliSplitView">
+                                <rect key="frame" x="237" y="0.0" width="358" height="500"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <customView id="172" customClass="CaliDummyView">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="222"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </customView>
+                                    <customView id="173" customClass="CaliDummyView">
+                                        <rect key="frame" x="0.0" y="231" width="358" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </customView>
+                                </subviews>
+                                <holdingPriorities>
+                                    <real value="250"/>
+                                    <real value="250"/>
+                                </holdingPriorities>
+                            </splitView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="17"/>
+            </connections>
+        </window>
+        <customView id="180" userLabel="SecondContentViewNavigationBar" customClass="CaliGradientBackgroundView">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="22"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" id="181">
+                    <rect key="frame" x="111" y="3" width="196" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="&lt;do not localise&gt;" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="184" id="289">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="miniSystem"/>
+                        <menu key="menu" title="OtherViews" id="182">
+                            <items>
+                                <menuItem title="&lt;do not localise&gt;" state="on" id="184"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+            </subviews>
+        </customView>
+        <customView id="188" userLabel="ListView">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="0.0" verticalLineScroll="19" verticalPageScroll="0.0" usesPredominantAxisScrolling="NO" id="190">
+                    <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <clipView key="contentView" drawsBackground="NO" id="Qbk-u9-rPE">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView focusRingType="none" appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveName="DocumentsList" id="191" customClass="CaliTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="215" height="19"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="name" editable="NO" width="212" minWidth="8" maxWidth="1000" id="192">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="294">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="sortOrder"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                    </tableColumn>
+                                </tableColumns>
+                            </tableView>
+                        </subviews>
+                        <nil key="backgroundColor"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="296">
+                        <rect key="frame" x="1" y="-30" width="198" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="295">
+                        <rect key="frame" x="-30" y="1" width="15" height="462"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+        </customView>
+        <customView id="208" userLabel="LiveFindToolbarItem">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" id="209" customClass="CaliSearchField">
+                    <rect key="frame" x="11" y="4" width="91" height="22"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" bezelStyle="round" maximumRecents="0" recentsAutosaveName="" id="290">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="liveFindToolbarItemAction:" target="-2" id="224"/>
+                    </connections>
+                </searchField>
+            </subviews>
+        </customView>
+        <customView id="215" userLabel="FunctionToolbarItem">
+            <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <popUpButton hidden="YES" verticalHuggingPriority="750" id="217">
+                    <rect key="frame" x="19" y="14" width="157" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <popUpButtonCell key="cell" type="push" title="&lt;do not localise&gt;" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="219" id="292">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="218">
+                            <items>
+                                <menuItem title="&lt;do not localise&gt;" state="on" id="219"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
+                <button id="216">
+                    <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="above" alignment="center" inset="2" id="291">
+                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system" size="10"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="functionToolbarItemAction:" target="-2" id="225"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+        <customView id="230" userLabel="ViewSelectionView" customClass="CaliGradientBackgroundView">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="22"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <slider verticalHuggingPriority="750" id="231">
+                    <rect key="frame" x="10" y="5" width="206" height="12"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <sliderCell key="cell" controlSize="mini" continuous="YES" alignment="left" minValue="16" maxValue="256" doubleValue="32" tickMarkPosition="above" sliderType="linear" id="293">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="viewSizeSliderAction:" target="-2" id="240"/>
+                    </connections>
+                </slider>
+            </subviews>
+        </customView>
+    </objects>
+</document>

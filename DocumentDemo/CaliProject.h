@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
+@interface CaliProject : NSDocument
 {
-    IBOutlet NSTextView *textView;
-    NSData * dataFromFile;
+    //IBOutlet NSTextView *textView;
+    //NSData * dataFromFile;
 }
 @end
 

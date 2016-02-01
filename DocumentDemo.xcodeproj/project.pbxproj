@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		5853151D1C5E722500D6BFFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853151C1C5E722500D6BFFD /* AppDelegate.m */; };
 		585315201C5E722500D6BFFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5853151F1C5E722500D6BFFD /* main.m */; };
-		585315231C5E722500D6BFFD /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315221C5E722500D6BFFD /* Document.m */; };
-		585315261C5E722500D6BFFD /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585315241C5E722500D6BFFD /* Document.xib */; };
+		585315231C5E722500D6BFFD /* CaliProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315221C5E722500D6BFFD /* CaliProject.m */; };
 		585315281C5E722500D6BFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585315271C5E722500D6BFFD /* Assets.xcassets */; };
 		5853152B1C5E722500D6BFFD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585315291C5E722500D6BFFD /* MainMenu.xib */; };
 		585315361C5E722600D6BFFD /* DocumentDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315351C5E722600D6BFFD /* DocumentDemoTests.m */; };
 		585315411C5E722600D6BFFD /* DocumentDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315401C5E722600D6BFFD /* DocumentDemoUITests.m */; };
+		58E13A531C5FBAB800BF1090 /* CaliProject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E13A521C5FBAB800BF1090 /* CaliProject.xib */; settings = {ASSET_TAGS = (); }; };
+		58E13A571C5FBE2E00BF1090 /* CaliSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A561C5FBE2E00BF1090 /* CaliSplitView.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A5B1C5FBFFD00BF1090 /* CaliTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A5A1C5FBFFD00BF1090 /* CaliTableView.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A5E1C5FC0D800BF1090 /* CaliSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A5D1C5FC0D800BF1090 /* CaliSearchField.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A611C5FC17400BF1090 /* CaliDummyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A601C5FC17400BF1090 /* CaliDummyView.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A641C5FC2EC00BF1090 /* CaliGradientBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A671C5FC49B00BF1090 /* CaliProjectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +45,8 @@
 		5853151B1C5E722500D6BFFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5853151C1C5E722500D6BFFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5853151F1C5E722500D6BFFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		585315211C5E722500D6BFFD /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		585315221C5E722500D6BFFD /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		585315251C5E722500D6BFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		585315211C5E722500D6BFFD /* CaliProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaliProject.h; sourceTree = "<group>"; };
+		585315221C5E722500D6BFFD /* CaliProject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaliProject.m; sourceTree = "<group>"; };
 		585315271C5E722500D6BFFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5853152A1C5E722500D6BFFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5853152C1C5E722500D6BFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +56,19 @@
 		5853153C1C5E722600D6BFFD /* DocumentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		585315401C5E722600D6BFFD /* DocumentDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDemoUITests.m; sourceTree = "<group>"; };
 		585315421C5E722600D6BFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E13A521C5FBAB800BF1090 /* CaliProject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaliProject.xib; sourceTree = "<group>"; };
+		58E13A551C5FBE2E00BF1090 /* CaliSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliSplitView.h; sourceTree = "<group>"; };
+		58E13A561C5FBE2E00BF1090 /* CaliSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliSplitView.m; sourceTree = "<group>"; };
+		58E13A591C5FBFFD00BF1090 /* CaliTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliTableView.h; sourceTree = "<group>"; };
+		58E13A5A1C5FBFFD00BF1090 /* CaliTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliTableView.m; sourceTree = "<group>"; };
+		58E13A5C1C5FC0D800BF1090 /* CaliSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliSearchField.h; sourceTree = "<group>"; };
+		58E13A5D1C5FC0D800BF1090 /* CaliSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliSearchField.m; sourceTree = "<group>"; };
+		58E13A5F1C5FC17400BF1090 /* CaliDummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliDummyView.h; sourceTree = "<group>"; };
+		58E13A601C5FC17400BF1090 /* CaliDummyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliDummyView.m; sourceTree = "<group>"; };
+		58E13A621C5FC2EC00BF1090 /* CaliGradientBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliGradientBackgroundView.h; sourceTree = "<group>"; };
+		58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliGradientBackgroundView.m; sourceTree = "<group>"; };
+		58E13A651C5FC49B00BF1090 /* CaliProjectWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliProjectWindow.h; sourceTree = "<group>"; };
+		58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliProjectWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +119,12 @@
 		5853151A1C5E722500D6BFFD /* DocumentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				58E13A541C5FBDF500BF1090 /* Classes */,
+				58E13A521C5FBAB800BF1090 /* CaliProject.xib */,
 				5853151B1C5E722500D6BFFD /* AppDelegate.h */,
 				5853151C1C5E722500D6BFFD /* AppDelegate.m */,
-				585315211C5E722500D6BFFD /* Document.h */,
-				585315221C5E722500D6BFFD /* Document.m */,
-				585315241C5E722500D6BFFD /* Document.xib */,
+				585315211C5E722500D6BFFD /* CaliProject.h */,
+				585315221C5E722500D6BFFD /* CaliProject.m */,
 				585315271C5E722500D6BFFD /* Assets.xcassets */,
 				585315291C5E722500D6BFFD /* MainMenu.xib */,
 				5853152C1C5E722500D6BFFD /* Info.plist */,
@@ -138,6 +157,33 @@
 				585315421C5E722600D6BFFD /* Info.plist */,
 			);
 			path = DocumentDemoUITests;
+			sourceTree = "<group>";
+		};
+		58E13A541C5FBDF500BF1090 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58E13A581C5FBE3600BF1090 /* Headers */,
+				58E13A561C5FBE2E00BF1090 /* CaliSplitView.m */,
+				58E13A5A1C5FBFFD00BF1090 /* CaliTableView.m */,
+				58E13A5D1C5FC0D800BF1090 /* CaliSearchField.m */,
+				58E13A601C5FC17400BF1090 /* CaliDummyView.m */,
+				58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */,
+				58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		58E13A581C5FBE3600BF1090 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				58E13A551C5FBE2E00BF1090 /* CaliSplitView.h */,
+				58E13A591C5FBFFD00BF1090 /* CaliTableView.h */,
+				58E13A5C1C5FC0D800BF1090 /* CaliSearchField.h */,
+				58E13A5F1C5FC17400BF1090 /* CaliDummyView.h */,
+				58E13A621C5FC2EC00BF1090 /* CaliGradientBackgroundView.h */,
+				58E13A651C5FC49B00BF1090 /* CaliProjectWindow.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				585315281C5E722500D6BFFD /* Assets.xcassets in Resources */,
-				585315261C5E722500D6BFFD /* Document.xib in Resources */,
+				58E13A531C5FBAB800BF1090 /* CaliProject.xib in Resources */,
 				5853152B1C5E722500D6BFFD /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				585315231C5E722500D6BFFD /* Document.m in Sources */,
+				585315231C5E722500D6BFFD /* CaliProject.m in Sources */,
+				58E13A641C5FC2EC00BF1090 /* CaliGradientBackgroundView.m in Sources */,
 				585315201C5E722500D6BFFD /* main.m in Sources */,
+				58E13A571C5FBE2E00BF1090 /* CaliSplitView.m in Sources */,
+				58E13A5B1C5FBFFD00BF1090 /* CaliTableView.m in Sources */,
+				58E13A671C5FC49B00BF1090 /* CaliProjectWindow.m in Sources */,
 				5853151D1C5E722500D6BFFD /* AppDelegate.m in Sources */,
+				58E13A611C5FC17400BF1090 /* CaliDummyView.m in Sources */,
+				58E13A5E1C5FC0D800BF1090 /* CaliSearchField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		585315241C5E722500D6BFFD /* Document.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				585315251C5E722500D6BFFD /* Base */,
-			);
-			name = Document.xib;
-			sourceTree = "<group>";
-		};
 		585315291C5E722500D6BFFD /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -501,6 +545,7 @@
 				585315471C5E722600D6BFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		585315481C5E722600D6BFFD /* Build configuration list for PBXNativeTarget "DocumentDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +554,7 @@
 				5853154A1C5E722600D6BFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5853154B1C5E722600D6BFFD /* Build configuration list for PBXNativeTarget "DocumentDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +563,7 @@
 				5853154D1C5E722600D6BFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
