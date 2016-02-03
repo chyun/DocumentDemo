@@ -18,4 +18,6 @@
 
 - (void)moveObjects:(NSArray *)objects inArrayController:(NSArrayController *)arrayController fromIndexes:(NSIndexSet *)rowIndexes toIndex:(NSInteger)insertIndex;
 
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView;
+
 @end

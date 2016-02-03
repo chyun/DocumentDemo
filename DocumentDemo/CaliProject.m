@@ -39,14 +39,25 @@
     
     [self setDefaultViews];
     
-    [documentsTableView setDelegate:self];
+    documentsTableView = [[NSTableView alloc] initWithFrame:NSMakeRect(0, 0, 364, 200)];
+    // create columns for our table
+    NSTableColumn * column1 = [[NSTableColumn alloc] initWithIdentifier:@"Col1"];
+    NSTableColumn * column2 = [[NSTableColumn alloc] initWithIdentifier:@"Col2"];
+    [column1 setWidth:252];
+    [column2 setWidth:198];
+    // generally you want to add at least one column to the table view.
+    [documentsTableView addTableColumn:column1];
+    [documentsTableView addTableColumn:column2];
+    
+    [documentsTableView reloadData];
+    
+    //[documentsTableView setDelegate:self];
     
     [documentsTableView setDataSource:[CaliDragAndDropController sharedInstance]];
     
-    [documentsTableView registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, NSStringPboardType, @"CaliMovedDocumentType", nil]];
+    //[documentsTableView registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, NSStringPboardType, @"CaliMovedDocumentType", nil]];
     
-    [documentsTableView setDraggingSourceOperationMask:(NSDragOperationCopy | NSDragOperationMove) forLocal:NO];
-
+    //[documentsTableView setDraggingSourceOperationMask:(NSDragOperationCopy | NSDragOperationMove) forLocal:NO];
 }
 
 - (void)setDefaultAppearanceAtStartup

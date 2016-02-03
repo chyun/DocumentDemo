@@ -66,4 +66,28 @@ static id sharedInstance = nil;
     [arrayController setContent:arrangedObjects];
 }
 
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+{
+    long recordCount = [self.dataArray count];
+    return recordCount;
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
+    NSString *aString;
+    aString = [[self.dataArray objectAtIndex:rowIndex] objectForKey:[aTableColumn identifier]];
+    return aString;
+}
+
+-(NSArray *)dataArray
+{
+    NSArray *array = [NSArray arrayWithObjects:
+                      [NSDictionary dictionaryWithObjectsAndKeys:@"1001",@"key1",@"1002",@"key2",@"1003",@"key3",@"1004",@"key4",@"1005",@"key5",@"1006",@"key6",@"1007",@"key7", nil],
+                      [NSDictionary dictionaryWithObjectsAndKeys:@"2001",@"key1",@"2002",@"key2",@"2003",@"key3",@"2004",@"key4",@"2005",@"key5",@"2006",@"key6",@"2007",@"key7", nil],
+                      [NSDictionary dictionaryWithObjectsAndKeys:@"3001",@"key1",@"3002",@"key2",@"3003",@"key3",@"3004",@"key4",@"3005",@"key5",@"3006",@"key6",@"3007",@"key7", nil],
+                      [NSDictionary dictionaryWithObjectsAndKeys:@"4001",@"key1",@"4002",@"key2",@"4003",@"key3",@"4004",@"key4",@"4005",@"key5",@"4006",@"key6",@"4007",@"key7", nil],
+                      nil];
+    return array;
+}
+
 @end
