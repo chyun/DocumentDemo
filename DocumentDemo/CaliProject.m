@@ -8,17 +8,19 @@
 
 //NOTE: 创建NSDocument的子类时要注意, xyz.xib, xyz.h, xyz.m, 以及windowNibName中的名字要相同
 #import "CaliProject.h"
-
-@interface CaliProject ()
-
-@end
+#import "CaliBasicPerformer.h"
+#import "CaliStandardHeader.h"
 
 @implementation CaliProject
+
+@synthesize leftDocumentsTableView;
 
 - (instancetype)init {
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
+        project = [CaliBasic createNewObjectForEntity:@"Project"];
+        //[[SMLProjectsController sharedDocumentController] setCurrentProject:self];
     }
     return self;
 }
@@ -34,8 +36,6 @@
 }
 
 - (NSString *)windowNibName {
-    // Override returning the nib file name of the document
-    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
     return @"CaliProject";
 }
 

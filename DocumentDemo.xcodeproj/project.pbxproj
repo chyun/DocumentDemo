@@ -21,6 +21,24 @@
 		58E13A611C5FC17400BF1090 /* CaliDummyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A601C5FC17400BF1090 /* CaliDummyView.m */; settings = {ASSET_TAGS = (); }; };
 		58E13A641C5FC2EC00BF1090 /* CaliGradientBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
 		58E13A671C5FC49B00BF1090 /* CaliProjectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A6A1C60D0C300BF1090 /* CaliBasicPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A691C60D0C300BF1090 /* CaliBasicPerformer.m */; settings = {ASSET_TAGS = (); }; };
+		58E13A7B1C61142C00BF1090 /* CaliDataModel4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A771C61142C00BF1090 /* CaliDataModel4.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		58E13A9F1C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A801C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA01C611A6D00BF1090 /* NSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A821C611A6D00BF1090 /* NSManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA11C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A841C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA21C611A6D00BF1090 /* SMLEncodingManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A861C611A6D00BF1090 /* SMLEncodingManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA31C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A881C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA41C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A8A1C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA51C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A8C1C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA61C611A6D00BF1090 /* SMLSnippetManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A8E1C611A6D00BF1090 /* SMLSnippetManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA71C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A901C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA81C611A6D00BF1090 /* SMLCommandCollectionManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A921C611A6D00BF1090 /* SMLCommandCollectionManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AA91C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A941C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AAA1C611A6D00BF1090 /* SMLDocumentManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A961C611A6D00BF1090 /* SMLDocumentManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AAB1C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A981C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AAC1C611A6D00BF1090 /* SMLCommandManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A9A1C611A6D00BF1090 /* SMLCommandManagedObject.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AAD1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A9C1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		58E13AAE1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A9E1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +87,44 @@
 		58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliGradientBackgroundView.m; sourceTree = "<group>"; };
 		58E13A651C5FC49B00BF1090 /* CaliProjectWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliProjectWindow.h; sourceTree = "<group>"; };
 		58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliProjectWindow.m; sourceTree = "<group>"; };
+		58E13A681C60D0C300BF1090 /* CaliBasicPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliBasicPerformer.h; sourceTree = "<group>"; };
+		58E13A691C60D0C300BF1090 /* CaliBasicPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliBasicPerformer.m; sourceTree = "<group>"; };
+		58E13A6B1C60D1DE00BF1090 /* CaliStandardHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliStandardHeader.h; sourceTree = "<group>"; };
+		58E13A781C61142C00BF1090 /* CaliDataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CaliDataModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		58E13A791C61142C00BF1090 /* CaliDataModel3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaliDataModel3.xcdatamodel; sourceTree = "<group>"; };
+		58E13A7A1C61142C00BF1090 /* CaliDataModel4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaliDataModel4.xcdatamodel; sourceTree = "<group>"; };
+		58E13A7F1C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A801C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A811C611A6D00BF1090 /* NSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObject.h; sourceTree = "<group>"; };
+		58E13A821C611A6D00BF1090 /* NSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObject.m; sourceTree = "<group>"; };
+		58E13A831C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLEncodingManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A841C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLEncodingManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A851C611A6D00BF1090 /* SMLEncodingManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLEncodingManagedObject.h; sourceTree = "<group>"; };
+		58E13A861C611A6D00BF1090 /* SMLEncodingManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLEncodingManagedObject.m; sourceTree = "<group>"; };
+		58E13A871C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLSyntaxDefinitionManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A881C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLSyntaxDefinitionManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A891C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLSyntaxDefinitionManagedObject.h; sourceTree = "<group>"; };
+		58E13A8A1C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLSyntaxDefinitionManagedObject.m; sourceTree = "<group>"; };
+		58E13A8B1C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLSnippetManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A8C1C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLSnippetManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A8D1C611A6D00BF1090 /* SMLSnippetManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLSnippetManagedObject.h; sourceTree = "<group>"; };
+		58E13A8E1C611A6D00BF1090 /* SMLSnippetManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLSnippetManagedObject.m; sourceTree = "<group>"; };
+		58E13A8F1C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLCommandCollectionManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A901C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLCommandCollectionManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A911C611A6D00BF1090 /* SMLCommandCollectionManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLCommandCollectionManagedObject.h; sourceTree = "<group>"; };
+		58E13A921C611A6D00BF1090 /* SMLCommandCollectionManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLCommandCollectionManagedObject.m; sourceTree = "<group>"; };
+		58E13A931C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLDocumentManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A941C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLDocumentManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A951C611A6D00BF1090 /* SMLDocumentManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLDocumentManagedObject.h; sourceTree = "<group>"; };
+		58E13A961C611A6D00BF1090 /* SMLDocumentManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLDocumentManagedObject.m; sourceTree = "<group>"; };
+		58E13A971C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLCommandManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A981C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLCommandManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A991C611A6D00BF1090 /* SMLCommandManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLCommandManagedObject.h; sourceTree = "<group>"; };
+		58E13A9A1C611A6D00BF1090 /* SMLCommandManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLCommandManagedObject.m; sourceTree = "<group>"; };
+		58E13A9B1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMLSnippetCollectionManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58E13A9C1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMLSnippetCollectionManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58E13A9D1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLSnippetCollectionManagedObject.h; sourceTree = "<group>"; };
+		58E13A9E1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLSnippetCollectionManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +155,39 @@
 		5853150F1C5E722500D6BFFD = {
 			isa = PBXGroup;
 			children = (
+				58E13A7F1C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.h */,
+				58E13A801C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.m */,
+				58E13A811C611A6D00BF1090 /* NSManagedObject.h */,
+				58E13A821C611A6D00BF1090 /* NSManagedObject.m */,
+				58E13A831C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.h */,
+				58E13A841C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.m */,
+				58E13A851C611A6D00BF1090 /* SMLEncodingManagedObject.h */,
+				58E13A861C611A6D00BF1090 /* SMLEncodingManagedObject.m */,
+				58E13A871C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.h */,
+				58E13A881C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.m */,
+				58E13A891C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.h */,
+				58E13A8A1C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.m */,
+				58E13A8B1C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.h */,
+				58E13A8C1C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.m */,
+				58E13A8D1C611A6D00BF1090 /* SMLSnippetManagedObject.h */,
+				58E13A8E1C611A6D00BF1090 /* SMLSnippetManagedObject.m */,
+				58E13A8F1C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.h */,
+				58E13A901C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.m */,
+				58E13A911C611A6D00BF1090 /* SMLCommandCollectionManagedObject.h */,
+				58E13A921C611A6D00BF1090 /* SMLCommandCollectionManagedObject.m */,
+				58E13A931C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.h */,
+				58E13A941C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.m */,
+				58E13A951C611A6D00BF1090 /* SMLDocumentManagedObject.h */,
+				58E13A961C611A6D00BF1090 /* SMLDocumentManagedObject.m */,
+				58E13A971C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.h */,
+				58E13A981C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.m */,
+				58E13A991C611A6D00BF1090 /* SMLCommandManagedObject.h */,
+				58E13A9A1C611A6D00BF1090 /* SMLCommandManagedObject.m */,
+				58E13A9B1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.h */,
+				58E13A9C1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.m */,
+				58E13A9D1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.h */,
+				58E13A9E1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.m */,
+				58E13A711C61093300BF1090 /* Models */,
 				5853151A1C5E722500D6BFFD /* DocumentDemo */,
 				585315341C5E722600D6BFFD /* DocumentDemoTests */,
 				5853153F1C5E722600D6BFFD /* DocumentDemoUITests */,
@@ -169,6 +258,7 @@
 				58E13A601C5FC17400BF1090 /* CaliDummyView.m */,
 				58E13A631C5FC2EC00BF1090 /* CaliGradientBackgroundView.m */,
 				58E13A661C5FC49B00BF1090 /* CaliProjectWindow.m */,
+				58E13A691C60D0C300BF1090 /* CaliBasicPerformer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -182,8 +272,18 @@
 				58E13A5F1C5FC17400BF1090 /* CaliDummyView.h */,
 				58E13A621C5FC2EC00BF1090 /* CaliGradientBackgroundView.h */,
 				58E13A651C5FC49B00BF1090 /* CaliProjectWindow.h */,
+				58E13A681C60D0C300BF1090 /* CaliBasicPerformer.h */,
+				58E13A6B1C60D1DE00BF1090 /* CaliStandardHeader.h */,
 			);
 			name = Headers;
+			sourceTree = "<group>";
+		};
+		58E13A711C61093300BF1090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58E13A771C61142C00BF1090 /* CaliDataModel4.xcdatamodeld */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,15 +416,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E13AA11C611A6D00BF1090 /* SMLEncodingManagedObject+CoreDataProperties.m in Sources */,
+				58E13AA61C611A6D00BF1090 /* SMLSnippetManagedObject.m in Sources */,
+				58E13AA81C611A6D00BF1090 /* SMLCommandCollectionManagedObject.m in Sources */,
+				58E13AAD1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject+CoreDataProperties.m in Sources */,
+				58E13AA01C611A6D00BF1090 /* NSManagedObject.m in Sources */,
 				585315231C5E722500D6BFFD /* CaliProject.m in Sources */,
+				58E13AA41C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject.m in Sources */,
+				58E13AA91C611A6D00BF1090 /* SMLDocumentManagedObject+CoreDataProperties.m in Sources */,
 				58E13A641C5FC2EC00BF1090 /* CaliGradientBackgroundView.m in Sources */,
 				585315201C5E722500D6BFFD /* main.m in Sources */,
+				58E13AAB1C611A6D00BF1090 /* SMLCommandManagedObject+CoreDataProperties.m in Sources */,
+				58E13AAC1C611A6D00BF1090 /* SMLCommandManagedObject.m in Sources */,
+				58E13AA71C611A6D00BF1090 /* SMLCommandCollectionManagedObject+CoreDataProperties.m in Sources */,
+				58E13A9F1C611A6D00BF1090 /* NSManagedObject+CoreDataProperties.m in Sources */,
+				58E13AA51C611A6D00BF1090 /* SMLSnippetManagedObject+CoreDataProperties.m in Sources */,
 				58E13A571C5FBE2E00BF1090 /* CaliSplitView.m in Sources */,
 				58E13A5B1C5FBFFD00BF1090 /* CaliTableView.m in Sources */,
 				58E13A671C5FC49B00BF1090 /* CaliProjectWindow.m in Sources */,
 				5853151D1C5E722500D6BFFD /* AppDelegate.m in Sources */,
 				58E13A611C5FC17400BF1090 /* CaliDummyView.m in Sources */,
+				58E13AA31C611A6D00BF1090 /* SMLSyntaxDefinitionManagedObject+CoreDataProperties.m in Sources */,
+				58E13A6A1C60D0C300BF1090 /* CaliBasicPerformer.m in Sources */,
 				58E13A5E1C5FC0D800BF1090 /* CaliSearchField.m in Sources */,
+				58E13A7B1C61142C00BF1090 /* CaliDataModel4.xcdatamodeld in Sources */,
+				58E13AA21C611A6D00BF1090 /* SMLEncodingManagedObject.m in Sources */,
+				58E13AAA1C611A6D00BF1090 /* SMLDocumentManagedObject.m in Sources */,
+				58E13AAE1C611A6D00BF1090 /* SMLSnippetCollectionManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +684,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58E13A771C61142C00BF1090 /* CaliDataModel4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58E13A781C61142C00BF1090 /* CaliDataModel 2.xcdatamodel */,
+				58E13A791C61142C00BF1090 /* CaliDataModel3.xcdatamodel */,
+				58E13A7A1C61142C00BF1090 /* CaliDataModel4.xcdatamodel */,
+			);
+			currentVersion = 58E13A791C61142C00BF1090 /* CaliDataModel3.xcdatamodel */;
+			path = CaliDataModel4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 585315101C5E722500D6BFFD /* Project object */;
 }

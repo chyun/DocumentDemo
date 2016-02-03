@@ -9,7 +9,16 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSManagedObjectContext *managedObjectContext;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+    NSManagedObjectModel *managedObjectModel;
+}
 
+@property (readonly) NSManagedObjectContext *managedObjectContext;
+@property (readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly) NSManagedObjectModel *managedObjectModel;
 
++ (AppDelegate *)sharedInstance;
 @end
 

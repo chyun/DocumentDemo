@@ -10,8 +10,11 @@
 
 @interface CaliProject : NSDocument
 {
-    //IBOutlet NSTextView *textView;
-    //NSData * dataFromFile;
+    NSManagedObject *project;
+    IBOutlet NSView *leftDocumentsTableView;
 }
+
+
+@property (readonly) IBOutlet NSView *leftDocumentsTableView;
 @end
 
