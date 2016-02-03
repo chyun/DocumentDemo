@@ -52,7 +52,12 @@ static id sharedInstance = nil;
         return managedObjectModel;
     }
     
-    managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CaliDataModel3" ofType:@"mom"]]];
+    // 获取实体模型文件对应的NSURL
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CaliDataModel3"
+                                              withExtension:@"mom"];
+    
+    managedObjectModel = [[NSManagedObjectModel alloc]
+                          initWithContentsOfURL:modelURL];
     
     return managedObjectModel;
 }

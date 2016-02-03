@@ -10,6 +10,12 @@
 
 #define CaliBasic [CaliBasicPerformer sharedInstance]
 #define CaliManagedObjectContext [[AppDelegate sharedInstance] managedObjectContext]
+#define CaliDefaults [[NSUserDefaultsController sharedUserDefaultsController] values]
+#define CaliInterface [CaliInterfacePerformer sharedInstance]
+#define CaliCurrentProject [[CaliProjectsController sharedDocumentController] currentDocument]
+
+
+typedef NSUInteger CaliView;
 
 @interface CaliStandardHeader : NSObject
 

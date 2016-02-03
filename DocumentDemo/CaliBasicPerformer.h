@@ -17,4 +17,6 @@
 
 - (id)createNewObjectForEntity:(NSString *)entity;
 
+- (id)objectFromURI:(NSURL *)uri;
+
 @end

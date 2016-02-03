@@ -42,4 +42,14 @@ static id sharedInstance = nil;
     return object;
 }
 
+- (id)objectFromURI:(NSURL *)uri
+{
+    NSManagedObjectContext *managedObjectContext = CaliManagedObjectContext;
+    NSManagedObjectID *objectID = [[managedObjectContext persistentStoreCoordinator]
+                                   managedObjectIDForURIRepresentation:uri];
+    
+    
+    return [managedObjectContext objectWithID:objectID];
+}
+
 @end

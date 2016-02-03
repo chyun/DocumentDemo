@@ -8,7 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="CaliProject">
             <connections>
                 <outlet property="contentSplitView" destination="174" id="177"/>
-                <outlet property="documentsTableView" destination="191" id="226"/>
+                <outlet property="documentsTableView" destination="191" id="3tC-4q-qQ6"/>
                 <outlet property="firstContentView" destination="172" id="179"/>
                 <outlet property="functionButton" destination="216" id="222"/>
                 <outlet property="functionPopUpButton" destination="217" id="223"/>
@@ -19,7 +19,7 @@
                 <outlet property="secondContentView" destination="173" id="178"/>
                 <outlet property="secondContentViewNavigationBar" destination="180" id="186"/>
                 <outlet property="secondContentViewPopUpButton" destination="181" id="187"/>
-                <outlet property="statusBarTextField" destination="63" id="64"/>
+                <outlet property="statusBarTextField" destination="63" id="54b-99-0Wd"/>
                 <outlet property="tabBarControl" destination="196" id="250"/>
                 <outlet property="tabBarTabView" destination="256" id="261"/>
                 <outlet property="viewSelectionSizeSlider" destination="231" id="239"/>
