@@ -8,11 +8,13 @@
 
 #import "CaliProject+DocumentViewsController.h"
 #import "CaliStandardHeader.h"
+#import "CaliInterfacePerformer.h"
 
 @implementation CaliProject (DocumentViewsController)
 
 - (void)setDefaultViews
 {
+    NSLog(@"setDefaultView");
 //    [tabBarControl setTabView:tabBarTabView];
 //    [tabBarControl setCanCloseOnlyTab:YES];
 //    [tabBarControl setStyleNamed:@"Unified"];
@@ -55,28 +57,29 @@
 
 - (void)insertView:(CaliView)view
 {
-//    [SMLDefaults setValue:[NSNumber numberWithInteger:view] forKey:@"View"];
-//    [project setValue:[NSNumber numberWithInteger:view] forKey:@"view"];
-//    
-//    [SMLInterface removeAllSubviewsFromView:leftDocumentsView];
-//    
-//    CGFloat viewSelectionHeight;
-//    if ([[SMLDefaults valueForKey:@"ShowSizeSlider"] boolValue] == YES) {
-//        viewSelectionHeight = [viewSelectionView bounds].size.height;
-//    } else {
-//        viewSelectionHeight = 0;
-//    }
-//    
-//    if (view == SMLListView) {
-//        [documentsTableView setRowHeight:[[project valueForKey:@"viewSize"] integerValue]];
-//        [leftDocumentsTableView setFrame:NSMakeRect([leftDocumentsView bounds].origin.x, [leftDocumentsView bounds].origin.y + viewSelectionHeight, [leftDocumentsView bounds].size.width, [leftDocumentsView bounds].size.height - viewSelectionHeight)];
-//        [leftDocumentsView addSubview:leftDocumentsTableView];
-//        
-//    }
-//    
+    [CaliDefaults setValue:[NSNumber numberWithInteger:view] forKey:@"View"];
+    [project setValue:[NSNumber numberWithInteger:view] forKey:@"view"];
+    
+    //[CaliInterface removeAllSubviewsFromView:leftDocumentsView];
+    
+    CGFloat viewSelectionHeight;
+    if ([[CaliDefaults valueForKey:@"ShowSizeSlider"] boolValue] == YES) {
+        viewSelectionHeight = [viewSelectionView bounds].size.height;
+    } else {
+        viewSelectionHeight = 0;
+    }
+
+    //NSLog(@"insertView: ");
+    if (view == CaliListView) {
+        NSLog(@"insert CaliListView: ");
+        [documentsTableView setRowHeight:[[project valueForKey:@"viewSize"] integerValue]];
+        [leftDocumentsTableView setFrame:NSMakeRect([leftDocumentsView bounds].origin.x, [leftDocumentsView bounds].origin.y + viewSelectionHeight, [leftDocumentsView bounds].size.width, [leftDocumentsView bounds].size.height - viewSelectionHeight)];
+        [leftDocumentsView addSubview:leftDocumentsTableView];        
+    }
+
 //    //if ([[SMLDefaults valueForKey:@"ShowSizeSlider"] boolValue] == YES) {
 //    [viewSelectionView setFrame:NSMakeRect(0, 0, [leftDocumentsView bounds].size.width, viewSelectionHeight)];
-//    [leftDocumentsView addSubview:viewSelectionView];
+    [leftDocumentsView addSubview:viewSelectionView];
 //    //}
 //    
 //    [viewSelectionSizeSlider setDoubleValue:[[project valueForKey:@"viewSize"] doubleValue]];

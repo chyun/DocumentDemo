@@ -13,14 +13,14 @@
                 <outlet property="functionButton" destination="216" id="222"/>
                 <outlet property="functionPopUpButton" destination="217" id="223"/>
                 <outlet property="leftDocumentsTableView" destination="188" id="199"/>
-                <outlet property="leftDocumentsView" destination="194" id="202"/>
+                <outlet property="leftDocumentsView" destination="194" id="u41-fQ-EwX"/>
                 <outlet property="liveFindSearchField" destination="209" id="221"/>
                 <outlet property="mainSplitView" destination="228" id="229"/>
                 <outlet property="secondContentView" destination="173" id="178"/>
                 <outlet property="secondContentViewNavigationBar" destination="180" id="186"/>
                 <outlet property="secondContentViewPopUpButton" destination="181" id="187"/>
                 <outlet property="statusBarTextField" destination="63" id="54b-99-0Wd"/>
-                <outlet property="tabBarControl" destination="196" id="250"/>
+                <outlet property="tabBarControl" destination="196" id="FqJ-jZ-rVH"/>
                 <outlet property="tabBarTabView" destination="256" id="261"/>
                 <outlet property="viewSelectionSizeSlider" destination="231" id="239"/>
                 <outlet property="viewSelectionView" destination="230" id="235"/>
@@ -124,6 +124,9 @@
                     </popUpButtonCell>
                 </popUpButton>
             </subviews>
+            <connections>
+                <outlet property="viewSelectionView" destination="230" id="RzH-l7-7cr"/>
+            </connections>
         </customView>
         <customView id="188" userLabel="ListView">
             <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
@@ -136,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView focusRingType="none" appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveName="DocumentsList" id="191" customClass="CaliTableView">
+                            <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveName="DocumentsList" id="191" customClass="CaliTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="215" height="19"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <size key="intercellSpacing" width="3" height="2"/>

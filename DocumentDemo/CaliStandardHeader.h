@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+
+enum {
+    CaliListView = 0
+};
+
 #define CaliBasic [CaliBasicPerformer sharedInstance]
 #define CaliManagedObjectContext [[AppDelegate sharedInstance] managedObjectContext]
 #define CaliDefaults [[NSUserDefaultsController sharedUserDefaultsController] values]

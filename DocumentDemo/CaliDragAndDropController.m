@@ -32,6 +32,7 @@ static id sharedInstance = nil;
         movedSnippetType = @"CaliMovedSnippetType";
         movedCommandType = @"CaliMovedCommandType";
     }
+    NSLog(@"CaliDragAndDropController has been initialized");
     return sharedInstance;
 }
 
@@ -77,6 +78,24 @@ static id sharedInstance = nil;
     NSString *aString;
     aString = [[self.dataArray objectAtIndex:rowIndex] objectForKey:[aTableColumn identifier]];
     return aString;
+}
+
+- (BOOL)tableView:(NSTableView *)aTableView acceptDrop:(id <NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)operation
+{
+    NSLog(@"released mouse");
+    return YES;
+}
+
+- (NSDragOperation)tableView:(NSTableView *)aTableView validateDrop:(id <NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)operation
+{
+    NSLog(@"tableView validateDrop");
+    return NSDragOperationCopy;
+}
+
+- (BOOL)tableView:(NSTableView *)aTableView writeRowsWithIndexes:(NSIndexSet *)rowIndexes toPasteboard:(NSPasteboard*)pboard
+{
+    NSLog(@"tableView writeRowsWithIndexes");
+    return YES;
 }
 
 -(NSArray *)dataArray

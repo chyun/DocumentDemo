@@ -17,7 +17,7 @@
 
 @implementation CaliProject
 
-@synthesize documentsTableView, leftDocumentsTableView, statusBarTextField, mainSplitView;
+@synthesize documentsTableView, leftDocumentsTableView, statusBarTextField, mainSplitView, contentSplitView, leftDocumentsView, tabBarControl;
 
 - (instancetype)init {
     self = [super init];
@@ -30,6 +30,7 @@
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
+    NSLog(@"windowControllerDidLoadNib");
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
     [[[self windowControllers] objectAtIndex:0] setWindowFrameAutosaveName:@"CaliTextProjectWindow"];
@@ -39,21 +40,12 @@
     
     [self setDefaultViews];
     
-    documentsTableView = [[NSTableView alloc] initWithFrame:NSMakeRect(0, 0, 364, 200)];
-    // create columns for our table
-    NSTableColumn * column1 = [[NSTableColumn alloc] initWithIdentifier:@"Col1"];
-    NSTableColumn * column2 = [[NSTableColumn alloc] initWithIdentifier:@"Col2"];
-    [column1 setWidth:252];
-    [column2 setWidth:198];
-    // generally you want to add at least one column to the table view.
-    [documentsTableView addTableColumn:column1];
-    [documentsTableView addTableColumn:column2];
-    
-    [documentsTableView reloadData];
-    
-    //[documentsTableView setDelegate:self];
+    [documentsTableView setDelegate:self];
+    NSLog(@"Table view delegate has been set");
     
     [documentsTableView setDataSource:[CaliDragAndDropController sharedInstance]];
+    [documentsTableView setDraggingSourceOperationMask:NSDragOperationLink forLocal:NO];
+    [documentsTableView setDraggingSourceOperationMask:NSDragOperationLink forLocal:YES];
     
     //[documentsTableView registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, NSStringPboardType, @"CaliMovedDocumentType", nil]];
     
