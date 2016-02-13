@@ -13,11 +13,16 @@
     NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
+    
+    BOOL shouldCreateEmptyDocument;
+    BOOL hasFinishedLaunching;
+    BOOL isTerminatingApplication;
 }
 
 @property (readonly) NSManagedObjectContext *managedObjectContext;
 @property (readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly) NSManagedObjectModel *managedObjectModel;
+@property (readonly) BOOL shouldCreateEmptyDocument, hasFinishedLaunching, isTerminatingApplication;
 
 + (AppDelegate *)sharedInstance;
 @end

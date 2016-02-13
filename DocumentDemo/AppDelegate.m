@@ -7,10 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "CaliStandardHeader.h"
+#import "CaliProjectsController.h"
+#import "CaliProject.h"
 
 @implementation AppDelegate
 
-@synthesize persistentStoreCoordinator, managedObjectModel, managedObjectContext;
+@synthesize persistentStoreCoordinator, managedObjectModel, managedObjectContext, shouldCreateEmptyDocument, hasFinishedLaunching, isTerminatingApplication;
 
 static id sharedInstance = nil;
 
@@ -26,6 +29,7 @@ static id sharedInstance = nil;
 {
     if (sharedInstance == nil) {
         sharedInstance = [super init];
+        shouldCreateEmptyDocument = YES;
     }
     
     return sharedInstance;
@@ -86,6 +90,32 @@ static id sharedInstance = nil;
     }
     
     return persistentStoreCoordinator;
+}
+
+- (NSMenu *)applicationDockMenu:(NSApplication *)sender
+{
+    NSLog(@"applicationDockMenu");
+    NSMenu *returnMenu = [[NSMenu alloc] init];
+    NSMenuItem *menuItem;
+    id document;
+    
+    NSEnumerator *currentProjectEnumerator = [[[CaliCurrentProject documentsArrayController] arrangedObjects] reverseObjectEnumerator];
+    for (document in currentProjectEnumerator) {
+        menuItem = [[NSMenuItem alloc] initWithTitle:[document valueForKey:@"name"] action:@selector(selectDocumentFromTheDock:) keyEquivalent:@""];
+        [menuItem setTarget:[CaliProjectsController sharedDocumentController]];
+        [menuItem setRepresentedObject:document];
+        [returnMenu insertItem:menuItem atIndex:0];
+    }
+    
+    NSArray *projects = [[CaliProjectsController sharedDocumentController] documents];
+
+    for (id project in projects) {
+        if (project == CaliCurrentProject) {
+            continue;
+        }
+    }
+
+    return returnMenu;
 }
 
 - (NSString *)applicationSupportFolder

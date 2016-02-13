@@ -17,4 +17,8 @@
 
 - (id)currentDocument;
 
+- (void)selectDocumentFromTheDock:(id)sender;
+
+- (void)selectDocument:(id)document;
+
 @end

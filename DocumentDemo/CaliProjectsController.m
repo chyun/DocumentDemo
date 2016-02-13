@@ -22,4 +22,27 @@
     }
 }
 
+- (void)selectDocumentFromTheDock:(id)sender
+{
+    [NSApp activateIgnoringOtherApps:YES];
+    [self selectDocument:[sender representedObject]];
+}
+
+- (void)selectDocument:(id)document
+{
+    NSArray *projects = [self documents];
+    for (id project in projects) {
+        NSArray *documents = [[(CaliProject *)project documents] allObjects];
+        for (id item in documents) {
+            if (item == document) {
+                [[project window] makeKeyAndOrderFront:nil];
+                [[project window] makeMainWindow];
+                [[project window] makeFirstResponder:[document valueForKey:@"firstTextView"]];
+                [project selectDocument:document];
+                return;
+            }
+        }
+    }
+}
+
 @end

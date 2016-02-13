@@ -13,12 +13,14 @@ enum {
     CaliListView = 0
 };
 
+#define CaliInterface [CaliInterfacePerformer sharedInstance]
 #define CaliBasic [CaliBasicPerformer sharedInstance]
 #define CaliManagedObjectContext [[AppDelegate sharedInstance] managedObjectContext]
 #define CaliDefaults [[NSUserDefaultsController sharedUserDefaultsController] values]
 #define CaliInterface [CaliInterfacePerformer sharedInstance]
 #define CaliCurrentProject [[CaliProjectsController sharedDocumentController] currentDocument]
-
+#define CaliVarious [CaliVariousPerformer sharedInstance]
+#define UNSAVED_STRING NSLocalizedString(@"(unsaved)", @"(unsaved)")
 
 typedef NSUInteger CaliView;
 

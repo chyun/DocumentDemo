@@ -44,13 +44,13 @@
 //- (void)insertDocumentIntoThirdContentView:(id)document orderFront:(BOOL)orderFront;
 //- (void)insertDocumentIntoFourthContentView:(id)document;
 //
-//- (void)updateStatusBar;
+- (void)updateStatusBar;
 - (void)clearStatusBar;
 //
 //- (NSString *)whichDirectoryForOpen;
 //- (NSString *)whichDirectoryForSave;
-//
-//- (void)removeAllSubviewsFromView:(NSView *)view;
+
+- (void)removeAllSubviewsFromView:(NSView *)view;
 //- (void)enterFullScreenForDocument:(id)document;
 //- (void)insertDocumentIntoFullScreenWindow;
 //- (void)returnFromFullScreen;

@@ -50,4 +50,20 @@ static id sharedInstance = nil;
     [[CaliCurrentProject statusBarTextField] setObjectValue:@""];
 }
 
+- (void)removeAllSubviewsFromView:(NSView *)view
+{
+    [view setSubviews:[NSArray array]];
+    NSLog(@"TODO: removeAllSubviewsFromView");
+    //NSArray *array = [NSArray arrayWithArray:[view subviews]];
+    //	id item;
+    //	for (item in array) {
+    //		[item removeFromSuperview];
+    //		item = nil;
+    //	}
+}
+
+- (void)updateStatusBar {
+    NSLog(@"TODO: updateStatusBar");
+}
+
 @end

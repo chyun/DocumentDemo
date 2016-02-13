@@ -8,8 +8,9 @@
         <customObject id="-2" userLabel="File's Owner" customClass="CaliProject">
             <connections>
                 <outlet property="contentSplitView" destination="174" id="177"/>
+                <outlet property="documentsArrayController" destination="Zpk-xS-APk" id="NCi-Ib-72h"/>
                 <outlet property="documentsTableView" destination="191" id="3tC-4q-qQ6"/>
-                <outlet property="firstContentView" destination="172" id="179"/>
+                <outlet property="firstContentView" destination="172" id="By3-CT-1MJ"/>
                 <outlet property="functionButton" destination="216" id="222"/>
                 <outlet property="functionPopUpButton" destination="217" id="223"/>
                 <outlet property="leftDocumentsTableView" destination="188" id="199"/>
@@ -23,7 +24,7 @@
                 <outlet property="tabBarControl" destination="196" id="FqJ-jZ-rVH"/>
                 <outlet property="tabBarTabView" destination="256" id="261"/>
                 <outlet property="viewSelectionSizeSlider" destination="231" id="239"/>
-                <outlet property="viewSelectionView" destination="230" id="235"/>
+                <outlet property="viewSelectionView" destination="230" id="EOr-15-bic"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>
@@ -113,20 +114,17 @@
                 <popUpButton verticalHuggingPriority="750" id="181">
                     <rect key="frame" x="111" y="3" width="196" height="15"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
-                    <popUpButtonCell key="cell" type="push" title="&lt;do not localise&gt;" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="184" id="289">
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="mini" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="289">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="miniSystem"/>
                         <menu key="menu" title="OtherViews" id="182">
                             <items>
-                                <menuItem title="&lt;do not localise&gt;" state="on" id="184"/>
+                                <menuItem title="&lt;do not localise&gt;" id="184"/>
                             </items>
                         </menu>
                     </popUpButtonCell>
                 </popUpButton>
             </subviews>
-            <connections>
-                <outlet property="viewSelectionView" destination="230" id="RzH-l7-7cr"/>
-            </connections>
         </customView>
         <customView id="188" userLabel="ListView">
             <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
@@ -139,7 +137,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="215" height="501"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveName="DocumentsList" id="191" customClass="CaliTableView">
+                            <tableView focusRingType="none" appearanceType="vibrantLight" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveName="DocumentsList" id="191" customClass="CaliTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="215" height="19"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
@@ -240,5 +238,6 @@
                 </slider>
             </subviews>
         </customView>
+        <arrayController id="Zpk-xS-APk" userLabel="DocumentsArrayController"/>
     </objects>
 </document>

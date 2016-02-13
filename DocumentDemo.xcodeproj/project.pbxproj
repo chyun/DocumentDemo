@@ -14,6 +14,10 @@
 		5853152B1C5E722500D6BFFD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585315291C5E722500D6BFFD /* MainMenu.xib */; };
 		585315361C5E722600D6BFFD /* DocumentDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315351C5E722600D6BFFD /* DocumentDemoTests.m */; };
 		585315411C5E722600D6BFFD /* DocumentDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585315401C5E722600D6BFFD /* DocumentDemoUITests.m */; };
+		58BFB4B91C6E415100BB076F /* CaliVariousPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB4B81C6E415100BB076F /* CaliVariousPerformer.m */; settings = {ASSET_TAGS = (); }; };
+		58D9E6551C6B9A87009222CC /* CaliProject+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E6541C6B9A87009222CC /* CaliProject+TableViewDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		58D9E6581C6BA118009222CC /* CaliLineNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E6571C6BA118009222CC /* CaliLineNumbers.m */; settings = {ASSET_TAGS = (); }; };
+		58D9E65B1C6C7700009222CC /* CaliTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D9E65A1C6C7700009222CC /* CaliTextView.m */; settings = {ASSET_TAGS = (); }; };
 		58E13A531C5FBAB800BF1090 /* CaliProject.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E13A521C5FBAB800BF1090 /* CaliProject.xib */; settings = {ASSET_TAGS = (); }; };
 		58E13A571C5FBE2E00BF1090 /* CaliSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A561C5FBE2E00BF1090 /* CaliSplitView.m */; settings = {ASSET_TAGS = (); }; };
 		58E13A5B1C5FBFFD00BF1090 /* CaliTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E13A5A1C5FBFFD00BF1090 /* CaliTableView.m */; settings = {ASSET_TAGS = (); }; };
@@ -78,6 +82,14 @@
 		5853153C1C5E722600D6BFFD /* DocumentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		585315401C5E722600D6BFFD /* DocumentDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentDemoUITests.m; sourceTree = "<group>"; };
 		585315421C5E722600D6BFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BFB4B71C6E415100BB076F /* CaliVariousPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliVariousPerformer.h; sourceTree = "<group>"; };
+		58BFB4B81C6E415100BB076F /* CaliVariousPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliVariousPerformer.m; sourceTree = "<group>"; };
+		58D9E6531C6B9A87009222CC /* CaliProject+TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CaliProject+TableViewDelegate.h"; sourceTree = "<group>"; };
+		58D9E6541C6B9A87009222CC /* CaliProject+TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CaliProject+TableViewDelegate.m"; sourceTree = "<group>"; };
+		58D9E6561C6BA118009222CC /* CaliLineNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliLineNumbers.h; sourceTree = "<group>"; };
+		58D9E6571C6BA118009222CC /* CaliLineNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliLineNumbers.m; sourceTree = "<group>"; };
+		58D9E6591C6C7700009222CC /* CaliTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliTextView.h; sourceTree = "<group>"; };
+		58D9E65A1C6C7700009222CC /* CaliTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliTextView.m; sourceTree = "<group>"; };
 		58E13A521C5FBAB800BF1090 /* CaliProject.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaliProject.xib; sourceTree = "<group>"; };
 		58E13A551C5FBE2E00BF1090 /* CaliSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaliSplitView.h; sourceTree = "<group>"; };
 		58E13A561C5FBE2E00BF1090 /* CaliSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaliSplitView.m; sourceTree = "<group>"; };
@@ -260,8 +272,12 @@
 				58E13AD01C61CC0100BF1090 /* CaliViewMenuController.m */,
 				58E13AD31C61D2C600BF1090 /* CaliProjectsController.m */,
 				58E13AD61C61DEC200BF1090 /* CaliInterfacePerformer.m */,
+				58BFB4B81C6E415100BB076F /* CaliVariousPerformer.m */,
 				58E13AD91C61E63100BF1090 /* CaliProject+DocumentViewsController.m */,
 				58E13ADC1C61F23000BF1090 /* CaliDragAndDropController.m */,
+				58D9E6541C6B9A87009222CC /* CaliProject+TableViewDelegate.m */,
+				58D9E6571C6BA118009222CC /* CaliLineNumbers.m */,
+				58D9E65A1C6C7700009222CC /* CaliTextView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -283,6 +299,10 @@
 				58E13AD21C61D2C600BF1090 /* CaliProjectsController.h */,
 				58E13AD81C61E63100BF1090 /* CaliProject+DocumentViewsController.h */,
 				58E13ADB1C61F23000BF1090 /* CaliDragAndDropController.h */,
+				58D9E6531C6B9A87009222CC /* CaliProject+TableViewDelegate.h */,
+				58D9E6561C6BA118009222CC /* CaliLineNumbers.h */,
+				58D9E6591C6C7700009222CC /* CaliTextView.h */,
+				58BFB4B71C6E415100BB076F /* CaliVariousPerformer.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -484,6 +504,7 @@
 				58E13AFD1C621EC500BF1090 /* PSMUnifiedTabStyle.m in Sources */,
 				58E13ABF1C61947400BF1090 /* CaliDocumentManagedObject.m in Sources */,
 				58E13A641C5FC2EC00BF1090 /* CaliGradientBackgroundView.m in Sources */,
+				58D9E65B1C6C7700009222CC /* CaliTextView.m in Sources */,
 				585315201C5E722500D6BFFD /* main.m in Sources */,
 				58E13ABC1C61942900BF1090 /* CaliEncodingManagedObject.m in Sources */,
 				58E13A571C5FBE2E00BF1090 /* CaliSplitView.m in Sources */,
@@ -492,15 +513,18 @@
 				58E13ADD1C61F23000BF1090 /* CaliDragAndDropController.m in Sources */,
 				5853151D1C5E722500D6BFFD /* AppDelegate.m in Sources */,
 				58E13AFC1C621EC500BF1090 /* PSMTabDragAssistant.m in Sources */,
+				58BFB4B91C6E415100BB076F /* CaliVariousPerformer.m in Sources */,
 				58E13A611C5FC17400BF1090 /* CaliDummyView.m in Sources */,
 				58E13AB91C6193E000BF1090 /* CaliSnippetManagedObject.m in Sources */,
 				58E13ADA1C61E63100BF1090 /* CaliProject+DocumentViewsController.m in Sources */,
+				58D9E6551C6B9A87009222CC /* CaliProject+TableViewDelegate.m in Sources */,
 				58E13AD41C61D2C600BF1090 /* CaliProjectsController.m in Sources */,
 				58E13AF91C621EC500BF1090 /* PSMRolloverButton.m in Sources */,
 				58E13A6A1C60D0C300BF1090 /* CaliBasicPerformer.m in Sources */,
 				58E13ACB1C61997D00BF1090 /* CaliDataModel3.xcdatamodel in Sources */,
 				58E13A5E1C5FC0D800BF1090 /* CaliSearchField.m in Sources */,
 				58E13AC51C6194DD00BF1090 /* CaliCommandManagedObject.m in Sources */,
+				58D9E6581C6BA118009222CC /* CaliLineNumbers.m in Sources */,
 				58E13AF81C621EC500BF1090 /* PSMOverflowPopUpButton.m in Sources */,
 				58E13ACE1C61BDEF00BF1090 /* CaliDocumentsListCell.m in Sources */,
 				58E13A7B1C61142C00BF1090 /* CaliDataModel4.xcdatamodeld in Sources */,
